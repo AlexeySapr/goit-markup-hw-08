@@ -31,7 +31,7 @@
       <nav class="main-navigation">
         <a class="logo page-header__logo" href="./index.html"><span class="logo__label">Web</span>Studio</a>
 
-        <ul class="navigation">
+        <!-- <ul class="navigation">
           <li class="navigation__item">
             <a class="navigation__link navigation__link--current" href="./index.html">Студия</a>
           </li>
@@ -39,28 +39,36 @@
             <a class="navigation__link" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-        </ul>
+        </ul> -->
+
+        <button class="main-navigation__button" type="button">
+          <svg class="button__menu" width="40" height="40">
+            <use href="./images/studio/sprite/sprite-icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </nav>
 
       <!-- Контакты -->
-      <ul class="contacts page-header__contacts">
-        <li class="contacts__item">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon" width="16" height="12">
-              <use href="./images/studio/sprite/sprite-icons.svg#mail"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contact-item">
-          <a class="contacts__link" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10" height="16">
-              <use href="./images/studio/sprite/sprite-icons.svg#smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      <!-- <ul class="contacts page-header__contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/studio/sprite/sprite-icons.svg#mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact-item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/studio/sprite/sprite-icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul> -->
+
+
     </div>
   </header>
 
@@ -74,7 +82,7 @@
       </div>
     </section>
 
-    <!-- Модальное окно -->
+    <!-- Модальное окно
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>
@@ -126,7 +134,7 @@
           <button class="button modal-form__button" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- Особенности -->
     <section class="section">
@@ -218,7 +226,7 @@
         <h2 class="section__title team__main-title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img class="team__img" src="./images/studio/team/produkt-designer.jpg" alt="" width="270" height="260" />
+            <img class="team__img" src="./images/studio/team/produkt-designer.jpg" alt="" width="450" height="460" />
             <div class="team__container">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__description" lang="en">Product Designer</p>
@@ -258,7 +266,7 @@
           </li>
 
           <li class="team__item">
-            <img class="team__img" src="./images/studio/team/frontend-developer.jpg" alt="" width="270" height="260" />
+            <img class="team__img" src="./images/studio/team/frontend-developer.jpg" alt="" width="450" height="460" />
             <div class="team__container">
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__description" lang="en">Frontend Developer</p>
@@ -296,7 +304,7 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/studio/team/marketing.jpg" alt="" width="270" height="260" />
+            <img class="team__img" src="./images/studio/team/marketing.jpg" alt="" width="450" height="460" />
             <div class="team__container">
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__description" lang="en">Marketing</p>
@@ -334,7 +342,7 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/studio/team/ui-designer.jpg" alt="" width="270" height="260" />
+            <img class="team__img" src="./images/studio/team/ui-designer.jpg" alt="" width="450" height="460" />
             <div class="team__container">
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__description" lang="en">UI Designer</p>
