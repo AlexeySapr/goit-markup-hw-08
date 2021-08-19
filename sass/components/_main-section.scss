@@ -5,11 +5,15 @@
   text-align: center;
 
   background-color: $secondary-background;
-  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  // 	url(../images/studio/main/main-img.jpg);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/main/main-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
 .main-section__title {
