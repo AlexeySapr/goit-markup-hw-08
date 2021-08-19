@@ -1,3 +1,9 @@
+.features__item {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -29,6 +35,7 @@
 @media screen and (min-width: 768px) {
   .features {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
@@ -38,6 +45,7 @@
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin-left: 15px;
     margin-right: 15px;
+    max-width: 345px;
 
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
