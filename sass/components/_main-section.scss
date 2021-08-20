@@ -1,41 +1,45 @@
 .main-section {
-	padding-top: 118px;
-	padding-bottom: 118px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-	text-align: center;
+  text-align: center;
 
-	background-color: $secondary-background;
-	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url(../images/studio/main/main-img.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto;
+  background-color: $secondary-background;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/main/main-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
 .main-section__title {
-	width: 360px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 
-	font-weight: 900;
-	font-size: 26px;
-	line-height: 1.615;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: $third-text-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $third-text-color;
 }
 
 // для компьютеров
 @media screen and (min-width: 1200px) {
-	.main-section {
-		padding-top: 200px;
-		padding-bottom: 200px;
-	}
+  .main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
-	.main-section__title {
-		width: 696px;
-		font-size: 44px;
-		line-height: 1.36;
-	}
+  .main-section__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

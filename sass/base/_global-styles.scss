@@ -1,68 +1,72 @@
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	line-height: 1.87;
-	letter-spacing: 0.03em;
-	color: $main-text-color;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .section {
-	padding-top: 60px;
-	padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-	@media screen and (min-width: 1200px) {
-		padding-top: 94px;
-		padding-bottom: 94px;
-	}
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-	font-size: 36px;
-	line-height: 1.16;
-	color: $secondary-text-color;
-	text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  color: $secondary-text-color;
+  text-align: center;
 }
 
 .section__filter {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .container {
-	margin: 0 auto;
-	padding: 0px 15px;
+  margin: 0 auto;
+  padding: 0px 15px;
 
-	@media screen and (min-width: 480px) {
-		width: 480px;
-	}
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-	@media screen and (min-width: 768px) {
-		width: 768px;
-	}
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
-	@media screen and (min-width: 1200px) {
-		width: 1200px;
-	}
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .button {
-	font-family: inherit;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.875;
-	letter-spacing: 0.06em;
-	color: $third-text-color;
-	background-color: $brand-color;
-	width: 200px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: none;
-	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $third-text-color;
+  background-color: $brand-color;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	&:hover,
-	&:focus {
-		background-color: $button-hover-color;
-	}
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
 }
