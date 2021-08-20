@@ -105,3 +105,30 @@
 		width: 450px;
 	}
 }
+
+// для компьютеров
+@media screen and (min-width: 1200px) {
+	.page-footer__address {
+		margin-right: 70px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__social {
+		margin-right: 93px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__container {
+		display: flex;
+		align-items: baseline;
+
+		text-align: start;
+	}
+
+	.subscribe__input {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-right: 12px;
+		width: 358px;
+	}
+}

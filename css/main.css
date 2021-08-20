@@ -987,4 +987,30 @@ body {
     width: 450px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .page-footer__address {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .page-footer__social {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: start;
+  }
+  .subscribe__input {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
