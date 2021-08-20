@@ -242,6 +242,24 @@ body.modal-open {
           transform: scale(0.5);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 450px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 528px;
+  }
+}
+
 .close-button {
   position: absolute;
   top: 8px;
