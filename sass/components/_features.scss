@@ -26,20 +26,23 @@
 	line-height: 1.71;
 }
 
+.features {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.features__item {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
 // для планшетов
 @media screen and (min-width: 768px) {
-	.features {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		margin-left: -15px;
-		margin-right: -15px;
-	}
-
 	.features__item {
 		flex-basis: calc((100% - 4 * 15px) / 2);
-		margin-left: 15px;
-		margin-right: 15px;
 
 		&:nth-child(-n + 2) {
 			margin-bottom: 30px;
@@ -47,6 +50,21 @@
 
 		&:nth-child(n + 3) {
 			margin-bottom: 0px;
+		}
+	}
+}
+
+// для компьютеров
+@media screen and (min-width: 1200px) {
+	.features {
+		flex-wrap: nowrap;
+	}
+
+	.features__item {
+		flex-basis: calc((100% - 8 * 15px) / 4);
+
+		&:nth-child(n) {
+			margin-bottom: 30px;
 		}
 	}
 }
