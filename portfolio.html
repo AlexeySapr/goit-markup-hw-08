@@ -26,31 +26,32 @@
   <!-- Хэдер -->
   <header class="page-header">
     <div class="page-header__container">
+
       <!-- Навигация -->
       <nav class="main-navigation">
         <a class="logo page-header__logo" href="./index.html"><span class="logo__label">Web</span>Studio</a>
 
+        <!-- Кнопка мобильного меню -->
+        <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use href="./images/studio/sprite/men-icon.svg#icon-menu"></use>
+          </svg>
+        </button>
 
-
-        <!-- <ul class="navigation">
+        <!-- пункты навигации -->
+        <ul class="navigation">
           <li class="navigation__item">
-            <a class="navigation__link" href="./index.html">Студия</a>
+            <a class="navigation__link navigation__link--current" href="./index.html">Студия</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="./portfolio.html">Портфолио</a>
+            <a class="navigation__link" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
         </ul>
-
-        <button class="main-navigation__button" type="button">
-          <svg class="button__menu" width="40" height="40">
-            <use href="./images/studio/sprite/sprite-icons.svg#icon-close"></use>
-          </svg>
-        </button>
-      </nav> -->
+      </nav>
 
       <!-- Контакты -->
-      <!-- <ul class="contacts page-header__contacts">
+      <ul class="contacts page-header__contacts">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:info@devstudio.com">
             <svg class="contacts__icon" width="16" height="12">
@@ -67,7 +68,7 @@
             +38 096 111 11 11
           </a>
         </li>
-      </ul> -->
+      </ul>
 
     </div>
   </header>
@@ -283,6 +284,28 @@
     </section>
   </main>
 
+  <!-- Мобильное меню -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+
+    <button class="menu-toggle js-close-menu" type="button">
+      <svg class="menu-toggle__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use href="./images/studio/sprite/men-icon.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-navigation">
+      <li class="mobile-navigation__item">
+        <a class="mobile-navigation__link mobile-navigation__link--current" href="./index.html">Студия</a>
+      </li>
+      <li class="mobile-navigation__item">
+        <a class="mobile-navigation__link" href="./portfolio.html">Портфолио</a>
+      </li>
+      <li class="mobile-navigation__item">
+        <a class="mobile-navigation__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
   <!-- Подвал страницы -->
   <footer class="page-footer">
     <div class="container page-footer__container">
@@ -350,6 +373,13 @@
       </form>
     </div>
   </footer>
+
+  <!-- Скрипт для мобильного меню -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
