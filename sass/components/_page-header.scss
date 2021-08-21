@@ -34,6 +34,15 @@
   padding: 0;
   border: 0;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.menu-toggle__icon {
+  fill: currentColor;
 }
 
 .menu-container {

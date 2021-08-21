@@ -175,6 +175,14 @@ body.modal-open {
   background-color: transparent;
 }
 
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #2196f3;
+}
+
+.menu-toggle__icon {
+  fill: currentColor;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
