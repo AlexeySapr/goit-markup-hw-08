@@ -34,20 +34,6 @@
   .backdrop.is-hidden & {
     transform: scale(0.5);
   }
-
-  @media screen and (min-width: 480px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    max-width: 450px;
-
-    transform: translate(-50%, -50%);
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 528px;
-  }
 }
 
 .close-button {
@@ -168,7 +154,6 @@
 .policy {
   position: relative;
   display: block;
-  // text-align: center;
   margin-bottom: 30px;
   padding-left: 23px;
 
@@ -218,4 +203,24 @@
 .policy__link {
   text-decoration: underline;
   color: $brand-color;
+}
+
+// для планшетов
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 450px;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+// для компьютеров
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 528px;
+  }
 }
