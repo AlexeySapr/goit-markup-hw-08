@@ -6,10 +6,6 @@
   padding: 10px 15px;
 }
 
-.page-header__contacts {
-  margin-left: auto;
-}
-
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -110,11 +106,7 @@
 
 .contacts {
   display: flex;
-  align-items: center;
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+  // align-items: center;
 }
 
 .contacts__link {
@@ -159,6 +151,10 @@
   .logo {
     margin-right: 88px;
   }
+
+  .contacts {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -167,10 +163,7 @@
   }
 
   .contacts {
-    flex-wrap: wrap;
-  }
-  .contacts__item:not(:last-child) {
-    margin-right: 0px;
+    flex-direction: column;
   }
 }
 
@@ -183,5 +176,9 @@
 
   .logo {
     margin-right: 93px;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
   }
 }

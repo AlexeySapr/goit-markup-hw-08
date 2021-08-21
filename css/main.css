@@ -137,10 +137,6 @@ body.modal-open {
   padding: 10px 15px;
 }
 
-.page-header__contacts {
-  margin-left: auto;
-}
-
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -257,13 +253,6 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .contacts__link {
@@ -310,6 +299,9 @@ body.modal-open {
   .logo {
     margin-right: 88px;
   }
+  .contacts {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -319,11 +311,10 @@ body.modal-open {
             justify-content: space-between;
   }
   .contacts {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contacts__item:not(:last-child) {
-    margin-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -334,6 +325,9 @@ body.modal-open {
   }
   .logo {
     margin-right: 93px;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
