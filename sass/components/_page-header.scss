@@ -91,22 +91,6 @@
   }
 }
 
-.navigation__link--current {
-  position: relative;
-  color: $brand-color;
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: -1px;
-    background-color: $brand-color;
-    border-radius: 2px;
-  }
-}
-
 //мобильное меню
 .js-close-menu {
   position: absolute;
@@ -148,15 +132,10 @@
 }
 
 .mobile-contacts__item:nth-child(1) .mobile-contacts__link {
-  // font-size: 34px;
   font-size: 7vw;
   line-height: 1.175;
 
   color: $brand-color;
-
-  // @media screen and (max-width: 376px) {
-  //   font-size: 27px;
-  // }
 }
 
 .mobile-social {
@@ -239,6 +218,22 @@
     margin-right: 88px;
   }
 
+  .navigation__link--current {
+    position: relative;
+    color: $brand-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -2px;
+      background-color: $brand-color;
+      border-radius: 2px;
+    }
+  }
+
   .contacts {
     margin-left: auto;
   }
@@ -267,6 +262,10 @@
 
   .logo {
     margin-right: 93px;
+  }
+
+  .navigation__link--current::after {
+    bottom: -1px;
   }
 
   .contacts__item:not(:last-child) {
